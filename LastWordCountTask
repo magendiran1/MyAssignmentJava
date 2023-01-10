@@ -1,0 +1,30 @@
+package week1.day2;
+
+public class WordCount {
+
+	public static void main(String[] args) {
+//Input: s = "Hello World"
+//Output: 5
+//Explanation: The last word is "World" with length 5.
+//Example 2:
+//
+//Input: s = "   fly me   to   the moon  "
+//Output: 4
+//Explanation: The last word is "moon" with length 4.
+//Example 3:
+//
+//Input: s = "luffy is still joyboy"
+//Output: 6
+//Explanation: The last word is "joyboy" with length 6.
+
+		String s = "luffy is still joyboy";
+
+		String[] s1 = s.split(" ");
+
+		String s2 = s1[s1.length - 1];
+		String[] s3 = s2.split("");
+		System.out.println(s3.length);
+
+	}
+
+}
